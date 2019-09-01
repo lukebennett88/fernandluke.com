@@ -21,7 +21,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="relative w-full md:w-1/2">
-        <FernAndLuke className="absolute inset-0 h-full" />
+        <FernAndLuke className="md:absolute md:inset-0 md:h-full" />
       </div>
     </article>
   );
