@@ -1,0 +1,46 @@
+{
+  "name": "gatsby-starter-tailwindcss",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby and Tailwind",
+  "version": "0.1.0",
+  "author": "Luke Bennett <hello@lukebennett.com.au>",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "gatsby": "^2.15.1",
+    "gatsby-image": "^2.2.15",
+    "gatsby-plugin-canonical-urls": "^2.1.5",
+    "gatsby-plugin-manifest": "^2.2.12",
+    "gatsby-plugin-netlify": "^2.1.10",
+    "gatsby-plugin-postcss": "^2.1.5",
+    "gatsby-plugin-purgecss": "^4.0.1",
+    "gatsby-plugin-react-helmet": "^3.1.5",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-plugin-sitemap": "^2.2.9",
+    "gatsby-source-filesystem": "^2.1.9",
+    "gatsby-transformer-sharp": "^2.2.6",
+    "postcss-import": "^12.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "tailwindcss": "^1.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "analyze": "npm run analyze:lint && npm run analyze:prettier",
+    "analyze:lint": "eslint --ext .jsx --ext .js .",
+    "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
+    "build": "gatsby build",
+    "build:serve": "npm run build && npm run serve",
+    "develop": "gatsby develop --open",
+    "fix": "npm run fix:lint && npm run fix:prettier",
+    "fix:lint": "eslint --ext .jsx --ext .js . --fix",
+    "fix:prettier": "prettier --write '**/*.{js,css,md,json}'",
+    "start": "npm run develop",
+    "serve": "gatsby serve --open"
+  }
+}
