@@ -1,1 +1,17 @@
 /* Utility classes */
+.left-half {
+  transform: translateX(-50%);
+}
+
+.right-half {
+  transform: translateX(50%);
+}
+.down-half {
+  transform: translateY(50%);
+}
+.up-half {
+  transform: translateY(-50%);
+}
+.down-half-left-half {
+  transform: translate(-50%, 50%);
+}

@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind.`,
+    title: `Bennington Wedding`,
+    description: `Website for #flukefest.`,
     author: `@luke_bennett_`,
-    siteUrl: `https://gatsby-starter-tailwindcss.netlify.com`,
+    siteUrl: `https://www.fernandluke.com`,
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -13,12 +13,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-canonical-urls`,
-    //   options: {
-    //     siteUrl: `https://www.lukebennett.com.au`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.fernandluke.com`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -46,4 +46,4 @@ module.exports = {
       },
     },
   ],
-}
+};

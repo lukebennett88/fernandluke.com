@@ -1,7 +1,7 @@
 module.exports = {
-  extends: ['wesbos'],
+  extends: ["wesbos"],
   rules: {
-    'arrow-body-style': 'off',
-    'react/no-danger': false,
-  },
+    "arrow-body-style": "off",
+    "react/no-danger": false
+  }
 };

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Pistilli';
+  font-display: swap;
+  src: url('/fonts/pistilli.woff2') format('woff2'),
+    url('/fonts/pistilli.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
