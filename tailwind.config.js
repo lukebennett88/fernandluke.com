@@ -21,5 +21,14 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: []
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        ".blur": {
+          "backdrop-filter": "blur(4px)"
+        },
+      };
+      addUtilities(newUtilities);
+    }
+  ]
 };
