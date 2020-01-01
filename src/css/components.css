@@ -5,8 +5,8 @@
   background-image: linear-gradient(
     to bottom,
     transparent 70%,
-    theme('colors.teal.200') 70%
+    theme("colors.teal.200") 70%
   );
-  color: theme('colors.teal.600');
+  color: theme("colors.teal.600");
   @apply font-bold inline-block;
 }
