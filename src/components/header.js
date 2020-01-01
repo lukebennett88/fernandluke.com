@@ -6,11 +6,11 @@ const Header = () => (
     <nav className="max-w-4xl px-4 py-4 mx-auto text-teal-600">
       <ul className="flex -mx-2 overflow-x-scroll font-medium">
         {[
-          // {
-          //   id: 0,
-          //   title: "RSVP",
-          //   href: "#rsvp"
-          // },
+          {
+            id: 0,
+            title: 'RSVP',
+            href: '#rsvp',
+          },
           {
             id: 1,
             title: 'Venue',
