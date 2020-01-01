@@ -4,12 +4,12 @@ import FernAndLuke from './FernAndLuke';
 
 const Hero = () => {
   return (
-    <article className="flex flex-wrap relative">
-      <div className="max-w-lg relative text-xl w-full md:w-1/2">
-        <h1 className="font-serif font-bold leading-none text-5xl sm:text-9xl text-gray-800">
+    <article className="relative flex flex-wrap">
+      <div className="relative w-full max-w-lg text-xl md:w-1/2">
+        <h1 className="font-serif text-5xl font-bold leading-none text-gray-800 sm:text-9xl">
           29/02/20
         </h1>
-        <h2 className="font-bold leading-none mt-4 text-teal-600 text-4xl">
+        <h2 className="mt-4 text-4xl font-bold leading-none text-teal-600">
           #flukefest
         </h2>
         <p className="mt-4">Fern and Luke are getting married!</p>

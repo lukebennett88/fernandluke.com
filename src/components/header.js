@@ -14,18 +14,18 @@ const Header = () => (
           // },
           {
             id: 1,
-            title: "Venue",
-            href: "#venue"
+            title: 'Venue',
+            href: '#venue',
           },
           {
             id: 2,
-            title: "Accommodation",
-            href: "#accommodation"
+            title: 'Accommodation',
+            href: '#accommodation',
           },
           {
             id: 3,
-            title: "Gifts",
-            href: "#gifts"
+            title: 'Gifts',
+            href: '#gifts',
           },
         ].map(navlink => (
           <li key={navlink.id}>

@@ -24,38 +24,38 @@ const Venue = () => {
         </div>
       </div>
       <div className="relative w-full p-4 md:w-1/2">
-          <h2 className="font-serif text-4xl leading-none text-gray-800">
-            The Venue
-          </h2>
-          <p className="mt-4">
-            The ceremony and reception will be held at{" "}
-            <a
-              href="https://goo.gl/maps/M9UvUSArKuCKq3GH8"
-              title="Kings Point Resort"
-              className="font-bold text-teal-600 hover:underline hover:text-teal-600"
-            >
-              Kings Point Resort
-            </a>{" "}
-            found on Riverside Drive on Port Macquarie’s North Shore. This is
-            accessed via the Hibbard Ferry (tickets cost $5 each way), once off
-            the ferry, take an immediate right, drive through the oyster farm
-            and you will find our venue. Don’t worry, there will be signs!
-          </p>
-          <p className="mt-4">
-            The Hibbard Ferry stops running at 6:30 pm on Saturday, so if you
-            are not staying overnight you will need to take the Settlement Point
-            Ferry via Shoreline Drive. You can find out more information about
-            the Ferries and their running times on{" "}
-            <a
-              href="https://www.pmhc.nsw.gov.au/Services/Transport/Ferries"
-              title="Ferry Information"
-              className="font-bold text-teal-600 hover:underline hover:text-teal-600"
-            >
-              the council website
-            </a>
-            .
-          </p>
-        </div>
+        <h2 className="font-serif text-4xl leading-none text-gray-800">
+          The Venue
+        </h2>
+        <p className="mt-4">
+          The ceremony and reception will be held at{' '}
+          <a
+            href="https://goo.gl/maps/M9UvUSArKuCKq3GH8"
+            title="Kings Point Resort"
+            className="font-bold text-teal-600 hover:underline hover:text-teal-600"
+          >
+            Kings Point Resort
+          </a>{' '}
+          found on Riverside Drive on Port Macquarie’s North Shore. This is
+          accessed via the Hibbard Ferry (tickets cost $5 each way), once off
+          the ferry, take an immediate right, drive through the oyster farm and
+          you will find our venue. Don’t worry, there will be signs!
+        </p>
+        <p className="mt-4">
+          The Hibbard Ferry stops running at 6:30 pm on Saturday, so if you are
+          not staying overnight you will need to take the Settlement Point Ferry
+          via Shoreline Drive. You can find out more information about the
+          Ferries and their running times on{' '}
+          <a
+            href="https://www.pmhc.nsw.gov.au/Services/Transport/Ferries"
+            title="Ferry Information"
+            className="font-bold text-teal-600 hover:underline hover:text-teal-600"
+          >
+            the council website
+          </a>
+          .
+        </p>
+      </div>
     </article>
   );
 };
