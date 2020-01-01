@@ -11,16 +11,6 @@ import PropTypes from 'prop-types';
 import Header from './header';
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
     <div className="flex flex-col min-h-screen font-sans antialiased text-gray-600 transition-colors ease-in transition-medium">
       <Header />
