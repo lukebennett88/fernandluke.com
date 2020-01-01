@@ -3,45 +3,41 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Header = () => (
-  <header className="bg-orange-600 mb-6 sticky top-0 z-40">
-    <nav className="max-w-4xl mx-auto px-4 py-4 text-white">
-      <ul className="flex font-medium -mx-2 overflow-x-scroll">
-        <li>
-          <AnchorLink
-            offset="56"
-            className="hover:text-black px-2"
-            href="#venue"
-          >
-            Venue
-          </AnchorLink>
-        </li>
-        <li>
-          <AnchorLink
-            offset="56"
-            className="hover:text-black px-2"
-            href="#accommodation"
-          >
-            Accommodation
-          </AnchorLink>
-        </li>
-        <li>
-          <AnchorLink
-            offset="56"
-            className="hover:text-black px-2"
-            href="#gifts"
-          >
-            Gifts
-          </AnchorLink>
-        </li>
-        {/* <li>
-          <AnchorLink
-            offset="56"
-            className="hover:text-black px-2"
-            href="#rsvp"
-          >
-            RSVP
-          </AnchorLink>
-        </li> */}
+  <header className="sticky top-0 z-40 mb-6 bg-white">
+    <nav className="max-w-4xl px-4 py-4 mx-auto text-teal-600">
+      <ul className="flex -mx-2 overflow-x-scroll font-medium">
+        {[
+          // {
+          //   id: 0,
+          //   title: "RSVP",
+          //   href: "#rsvp"
+          // },
+          {
+            id: 1,
+            title: "Venue",
+            href: "#venue"
+          },
+          {
+            id: 2,
+            title: "Accommodation",
+            href: "#accommodation"
+          },
+          {
+            id: 3,
+            title: "Gifts",
+            href: "#gifts"
+          },
+        ].map(navlink => (
+          <li key={navlink.id}>
+            <AnchorLink
+              offset="56"
+              className="px-2 hover:text-black"
+              href={navlink.href}
+            >
+              {navlink.title}
+            </AnchorLink>
+          </li>
+        ))}
       </ul>
     </nav>
   </header>
