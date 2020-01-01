@@ -16,16 +16,15 @@ const Venue = () => {
   `);
   return (
     <article id="venue" className="flex flex-wrap mt-12 -mx-4">
-      <div className="p-4 w-full md:w-1/2">
-        <div className="pb-full relative">
+      <div className="w-full p-4 md:w-1/2">
+        <div className="relative pb-full">
           <div className="absolute inset-0">
             <Image className="h-full" fluid={data.file.childImageSharp.fluid} />
           </div>
         </div>
       </div>
-      <div className="p-4 relative w-full md:w-1/2">
-        <div className="relative z-10">
-          <h2 className="font-serif leading-none text-gray-800 text-4xl">
+      <div className="relative w-full p-4 md:w-1/2">
+          <h2 className="font-serif text-4xl leading-none text-gray-800">
             The Venue
           </h2>
           <p className="mt-4">
@@ -45,10 +44,18 @@ const Venue = () => {
           <p className="mt-4">
             The Hibbard Ferry stops running at 6:30 pm on Saturday, so if you
             are not staying overnight you will need to take the Settlement Point
-            Ferry via Shoreline Drive. You can find out more information about the Ferries and their running times on <a href="https://www.pmhc.nsw.gov.au/Services/Transport/Ferries" title="Ferry Information" className="font-bold text-teal-600 hover:underline hover:text-orange-600">the council website</a>.
+            Ferry via Shoreline Drive. You can find out more information about
+            the Ferries and their running times on{" "}
+            <a
+              href="https://www.pmhc.nsw.gov.au/Services/Transport/Ferries"
+              title="Ferry Information"
+              className="font-bold text-teal-600 hover:underline hover:text-teal-600"
+            >
+              the council website
+            </a>
+            .
           </p>
         </div>
-      </div>
     </article>
   );
 };

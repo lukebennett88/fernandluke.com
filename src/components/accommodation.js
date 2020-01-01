@@ -16,8 +16,8 @@ const Accommodation = () => {
   `);
   return (
     <article id="accommodation" className="flex flex-wrap-reverse mt-12 -mx-4">
-      <div className="p-4 w-full md:w-1/2">
-        <h2 className="font-serif leading-none text-gray-800 text-4xl">
+      <div className="w-full p-4 md:w-1/2">
+        <h2 className="font-serif text-4xl leading-none text-gray-800">
           Accommodation
         </h2>
         <p className="mt-4">
@@ -36,15 +36,15 @@ const Accommodation = () => {
           <a
             href="https://www.airbnb.com.au/s/Port-Macquarie--Australia/homes?refinement_paths%5B%5D=%2Fhomes&current_tab_id=home_tab&selected_tab_id=home_tab&source=mc_search_bar&click_referer=t%3ASEE_ALL%7Csid%3A97d9f9f9-36c5-4586-aeb4-a9326fc16efd%7Cst%3ALANDING_PAGE_MARQUEE&ne_lat=-31.396534879453487&ne_lng=152.8916835394898&sw_lat=-31.475186948759866&sw_lng=152.86584850225836&zoom=14&search_by_map=true&search_type=unknown&screen_size=large&adults=1"
             title="Port Macquarie on AirBnB"
-            className="font-bold text-teal-600 hover:underline hover:text-orange-600"
+            className="font-bold text-teal-600 hover:underline hover:text-teal-600"
           >
             Airbnb
           </a>
           .
         </p>
       </div>
-      <div className="p-4 w-full md:w-1/2">
-        <div className="pb-full relative">
+      <div className="w-full p-4 md:w-1/2">
+        <div className="relative pb-full">
           <div className="absolute inset-0">
             <Image className="h-full" fluid={data.file.childImageSharp.fluid} />
           </div>
