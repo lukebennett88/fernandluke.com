@@ -23,16 +23,16 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="antialiased flex flex-col font-sans min-h-screen text-gray-600">
+    <div className="flex flex-col min-h-screen font-sans antialiased text-gray-600">
       <Header />
-      <main id="main" className="flex-1 mx-auto max-w-4xl px-4 pb-6 w-full">
+      <main id="main" className="flex-1 w-full max-w-4xl px-4 pb-6 mx-auto">
         {children}
       </main>
-      <footer className="bg-orange-600 text-white text-center">
-        <div className="mx-auto max-w-4xl p-4 w-full">
+      <footer className="text-center">
+        <div className="w-full max-w-4xl p-4 mx-auto">
           For all wedding related enquires, please contact us via{' '}
           <a
-            className="font-bold hover:text-orange-200"
+            className="font-bold text-teal-600 hover:underline"
             href="mailto:hello@fernandluke.com?subject=%23flukefest"
           >
             email
