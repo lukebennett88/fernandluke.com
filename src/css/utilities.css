@@ -15,3 +15,9 @@
 .down-half-left-half {
   transform: translate(-50%, 50%);
 }
+
+@variants focus, hover {
+  .blur {
+    backdrop-filter: blur(4px);
+  }
+}
