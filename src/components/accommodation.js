@@ -32,7 +32,7 @@ const Accommodation = () => {
         </p>
         <p className="mt-4">
           If you would like something a little less Glastonbury and a little
-          more glam, you can also find accommadation on{" "}
+          more glam, you can also find accommodation on{" "}
           <a
             href="https://www.airbnb.com.au/s/Port-Macquarie--Australia/homes?refinement_paths%5B%5D=%2Fhomes&current_tab_id=home_tab&selected_tab_id=home_tab&source=mc_search_bar&click_referer=t%3ASEE_ALL%7Csid%3A97d9f9f9-36c5-4586-aeb4-a9326fc16efd%7Cst%3ALANDING_PAGE_MARQUEE&ne_lat=-31.396534879453487&ne_lng=152.8916835394898&sw_lat=-31.475186948759866&sw_lng=152.86584850225836&zoom=14&search_by_map=true&search_type=unknown&screen_size=large&adults=1"
             title="Port Macquarie on AirBnB"
