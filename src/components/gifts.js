@@ -28,7 +28,7 @@ const Gifts = () => {
           Gifts
         </h2>
         <p className="mt-4">
-          We have a toaster, and we don't need any more wine glasses. Your
+          We have a toaster, and we don’t need any more wine glasses. Your
           presence on our special day is present enough! If you would like to
           gift us anything, there will be a wishing well set up on the big day
           which will go towards an epic honeymoon in Byron Bay later in the

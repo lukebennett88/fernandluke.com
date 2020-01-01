@@ -29,10 +29,18 @@ const Venue = () => {
             The Venue
           </h2>
           <p className="mt-4">
-            The ceremony and reception will be held at <a href="https://goo.gl/maps/Lp2sn98w25cVrMRA9" title="Kings Point Resort" className="font-bold text-teal-600 hover:underline hover:text-orange-600">Kings Point Resort</a> found on Riverside Drive on Port Macquarie's North Shore. This is accessed via the Hibbard Ferry
-            (tickets cost $5 each way), once off the ferry, take an immediate
-            right, drive through the oyster farm and you will find our venue.
-            Don't worry, there will be signs!
+            The ceremony and reception will be held at{" "}
+            <a
+              href="https://goo.gl/maps/M9UvUSArKuCKq3GH8"
+              title="Kings Point Resort"
+              className="font-bold text-teal-600 hover:underline hover:text-teal-600"
+            >
+              Kings Point Resort
+            </a>{" "}
+            found on Riverside Drive on Port Macquarie’s North Shore. This is
+            accessed via the Hibbard Ferry (tickets cost $5 each way), once off
+            the ferry, take an immediate right, drive through the oyster farm
+            and you will find our venue. Don’t worry, there will be signs!
           </p>
           <p className="mt-4">
             The Hibbard Ferry stops running at 6:30 pm on Saturday, so if you

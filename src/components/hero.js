@@ -16,7 +16,7 @@ const Hero = () => {
         <p className="mt-4">
           We hope our website can help you with any questions you may have,
           additional info will be added as we get closer to the date! We are so
-          excited to share our special day with you and hope you're ready to
+          excited to share our special day with you and hope you’re ready to
           party hard!
         </p>
       </div>
