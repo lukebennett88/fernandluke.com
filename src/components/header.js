@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -42,13 +41,5 @@ const Header = () => (
     </nav>
   </header>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const FernAndLuke = ({ className }) => {
   return (
@@ -431,6 +432,10 @@ const FernAndLuke = ({ className }) => {
       <circle cx="769.596" cy="215.674" r="2.083" fill="#fff" />
     </svg>
   );
+};
+
+FernAndLuke.propTypes = {
+  className: PropTypes.string,
 };
 
 export default FernAndLuke;
