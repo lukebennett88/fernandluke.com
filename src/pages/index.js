@@ -6,7 +6,6 @@ import Hero from '../components/hero';
 import Venue from '../components/venue';
 import Accommodation from '../components/accommodation';
 import Gifts from '../components/gifts';
-// import RSVP from '../components/rsvp';
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +14,6 @@ const IndexPage = () => (
     <Venue />
     <Accommodation />
     <Gifts />
-    {/* <RSVP /> */}
   </Layout>
 );
 
