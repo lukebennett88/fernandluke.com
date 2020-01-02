@@ -1,7 +1,7 @@
 {
   "name": "fernandluke.com",
   "private": true,
-  "description": "Website for #flukefest.",
+  "description": "Website for #flukefest2020.",
   "version": "0.1.0",
   "author": "Luke Bennett <hello@lukebennett.com.au>",
   "dependencies": {
@@ -25,6 +25,7 @@
     "react": "16.12.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "16.12.0",
+    "react-headroom": "^3.0.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
     "react-modal": "^3.11.1",
