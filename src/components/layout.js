@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
           For all wedding related enquires, please contact us via{' '}
           <a
             className="font-bold text-teal-600 hover:underline"
-            href="mailto:hello@fernandluke.com?subject=%23flukefest"
+            href="mailto:hello@fernandluke.com?subject=%23flukefest2020"
           >
             email
           </a>

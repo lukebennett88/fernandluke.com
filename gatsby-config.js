@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Bennington Wedding`,
-    description: `Website for #flukefest.`,
+    description: `Website for #flukefest2020.`,
     author: `@luke_bennett_`,
     siteUrl: `https://www.fernandluke.com`,
   },

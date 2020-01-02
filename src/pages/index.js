@@ -8,8 +8,8 @@ import Accommodation from '../components/accommodation';
 import Gifts from '../components/gifts';
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="#flukefest" />
+  <Layout home>
+    <SEO title="#flukefest2020" />
     <Hero />
     <Venue />
     <Accommodation />
