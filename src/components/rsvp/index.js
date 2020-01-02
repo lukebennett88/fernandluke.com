@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby';
-import { IoIosClose } from 'react-icons/io';
-import PropTypes from 'prop-types';
 
 import FormRow from './form-row';
 import Radio from './radio';
@@ -14,7 +12,7 @@ function encode(data) {
     .join('&');
 }
 
-const RSVP = ({ setIsModalOpen }) => {
+const RSVP = () => {
   const [state, setState] = useState({});
 
   const handleChange = e => {
@@ -38,48 +36,44 @@ const RSVP = ({ setIsModalOpen }) => {
 
   return (
     <form
-      name="contact"
+      name="rsvp-form"
       method="post"
       action="/thanks/"
       data-netlify="true"
       onSubmit={handleSubmit}
-      className="relative w-full px-4 py-8 font-sans text-gray-600 transition-colors ease-in transition-medium"
+      className="w-full mt-12 font-sans text-gray-600 transition-colors ease-in transition-medium"
     >
-      <button
-        type="button"
-        onClick={() => setIsModalOpen(false)}
-        className="absolute top-0 right-0 text-4xl text-gray-800"
-      >
-        <IoIosClose />
-      </button>
-      <h2 className="font-serif text-2xl leading-none text-gray-800">
+      <h1 className="font-serif text-4xl leading-none text-gray-800">
         Fern &amp; Luke’s <span className="line-through">Wedding</span>{' '}
-        Marriage&nbsp;Party RSVP Form
-      </h2>
+        Marriage&nbsp;Party RSVP&nbsp;Form
+      </h1>
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type="hidden" name="form-name" value="contact" />
 
       {/* RSVP (Yes/No) */}
-      <FormRow title="Hello! Will you be attending our wedding?">
+      <FormRow title="Hello! Will you be attending our wedding? *">
         <Radio
           name="rsvp"
           id="rsvp-yes"
           handleChange={handleChange}
           value="Heck yeah!"
+          required
         />
         <Radio
           name="rsvp"
           id="rsvp-no"
           handleChange={handleChange}
           value="Nah mate..."
+          required
         />
       </FormRow>
 
       {/* Who is attending? */}
-      <FormRow title="How many people will you be RSVPing for?">
+      <FormRow title="How many people will you be RSVPing for? *">
         <TextArea
           name="who"
           id="who"
+          required
           value="Write their names below"
           placeholder="Arnold Schwarzenegger"
           handleChange={handleChange}
@@ -103,18 +97,20 @@ const RSVP = ({ setIsModalOpen }) => {
       </FormRow>
 
       {/* Will you be camping? */}
-      <FormRow title="Will you be camping?">
+      <FormRow title="Will you be camping? *">
         <Radio
           name="camping"
           id="camping-yes"
           handleChange={handleChange}
           value="Fo shizzle"
+          required
         />
         <Radio
           name="camping"
           id="camping-no"
           handleChange={handleChange}
           value="Yeah nah..."
+          required
         />
       </FormRow>
 
@@ -154,15 +150,15 @@ const RSVP = ({ setIsModalOpen }) => {
         />
       </FormRow>
 
-      <p className="leading-tight">
+      <p className="mt-4 leading-tight">
         <small>
-          Please note: neither of the above options will have any effect on the
-          wedding. Management can (and will) refuse any entry that suggests
-          “Horses” by Daryl Braithwaite.
+          Please note: the previous 2 questions are for consideration only, and
+          may not have any effect on the wedding. Management can (and will)
+          refuse entry to anyone that suggests “Horses” by Daryl Braithwaite.
         </small>
       </p>
 
-      <p className="mt-4">
+      <p className="mt-8">
         <button
           type="submit"
           className="inline-block px-4 py-1 font-bold text-gray-800 border-2 border-gray-800 hover:bg-gray-800 hover:text-white"
@@ -172,10 +168,6 @@ const RSVP = ({ setIsModalOpen }) => {
       </p>
     </form>
   );
-};
-
-RSVP.propTypes = {
-  setIsModalOpen: PropTypes.func,
 };
 
 export default RSVP;
