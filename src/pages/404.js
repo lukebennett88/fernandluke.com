@@ -28,7 +28,7 @@ const NotFoundPage = () => (
         style={{ transform: `rotate(180deg)` }}
         className="relative w-full md:w-1/2"
       >
-        <FernAndLuke className="mt-12 md:mt-0 md:w-full" />
+        <FernAndLuke className="max-w-xs mb-12 ml-auto md:mt-0 md:w-full md:mr-auto md:ml-0 md:mb-0" />
       </div>
     </article>
   </Layout>

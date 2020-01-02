@@ -30,7 +30,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="relative w-full md:w-1/2">
-        <FernAndLuke className="md:absolute md:inset-0 md:h-full" />
+        <FernAndLuke className="max-w-xs mt-12 md:ml-auto md:mt-0 md:w-full" />
       </div>
     </article>
   );

@@ -16,7 +16,7 @@ const ThanksPage = () => (
         <p>Hope to see you there.</p>
       </div>
       <div className="relative w-full md:w-1/2">
-        <FernAndLuke className="mt-12 md:mt-0 md:w-full" />
+        <FernAndLuke className="max-w-xs mt-12 md:ml-auto md:mt-0 md:w-full" />
       </div>
     </article>
   </Layout>
