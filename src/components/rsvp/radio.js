@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Radio = ({ name, id, handleChange, value }) => {
+const Radio = ({ name, id, required = false, handleChange, value }) => {
   return (
     <label htmlFor={id} className="inline-block w-full">
       <input
         type="radio"
+        required={required}
         name={name}
         id={id}
         onChange={handleChange}
@@ -19,6 +20,7 @@ const Radio = ({ name, id, handleChange, value }) => {
 Radio.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
+  required: PropTypes.bool,
   handleChange: PropTypes.func,
   value: PropTypes.string,
 };

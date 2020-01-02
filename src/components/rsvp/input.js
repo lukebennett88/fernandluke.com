@@ -5,6 +5,7 @@ const Input = ({
   name,
   id,
   value,
+  required = false,
   bold = false,
   placeholder,
   handleChange,
@@ -16,6 +17,7 @@ const Input = ({
         type="text"
         name={name}
         id={id}
+        required={required}
         placeholder={placeholder}
         onChange={handleChange}
         className="w-full px-2 py-1 border-2 rounded-none shadow-none outline-none appearance-none form-textarea focus:border-black hover:bg-gray-100"
@@ -29,6 +31,7 @@ Input.propTypes = {
   id: PropTypes.string,
   value: PropTypes.string,
   bold: PropTypes.bool,
+  required: PropTypes.bool,
   placeholder: PropTypes.string,
   handleChange: PropTypes.func,
 };

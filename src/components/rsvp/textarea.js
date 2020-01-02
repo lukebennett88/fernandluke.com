@@ -7,6 +7,7 @@ const TextArea = ({
   value,
   bold = false,
   placeholder,
+  required = false,
   rows = 4,
   handleChange,
 }) => {
@@ -17,6 +18,7 @@ const TextArea = ({
         name={name}
         id={id}
         placeholder={placeholder}
+        required={required}
         rows={rows}
         onChange={handleChange}
         className="w-full px-2 py-1 border-2 rounded-none shadow-none outline-none appearance-none form-textarea focus:border-black hover:bg-gray-100"
@@ -30,6 +32,7 @@ TextArea.propTypes = {
   id: PropTypes.string,
   value: PropTypes.string,
   bold: PropTypes.bool,
+  required: PropTypes.bool,
   placeholder: PropTypes.string,
   rows: PropTypes.number,
   handleChange: PropTypes.func,
