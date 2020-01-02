@@ -1,19 +1,9 @@
-import React, { useState } from 'react';
-import Modal from 'react-modal';
-import { animated, useTransition } from 'react-spring';
+import React from 'react';
+import { Link } from 'gatsby';
 
-import RSVP from './rsvp';
 import FernAndLuke from './FernAndLuke';
 
 const Hero = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const modalAnimations = useTransition(isModalOpen, null, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-  });
-
   return (
     <article className="relative flex flex-wrap">
       <div className="relative w-full max-w-lg text-xl md:w-1/2">
@@ -21,7 +11,7 @@ const Hero = () => {
           29/02/20
         </h1>
         <h2 className="mt-4 text-4xl font-bold leading-none text-teal-600">
-          #flukefest
+          #flukefest2020
         </h2>
         <p className="mt-4">Fern and Luke are getting married!</p>
         <p className="mt-4">
@@ -31,45 +21,19 @@ const Hero = () => {
           party hard!
         </p>
         <p className="mt-6">
-          <button
-            type="button"
-            id="rsvp"
-            onClick={() => setIsModalOpen(!isModalOpen)}
+          <Link
+            to="/rsvp"
             className="inline-block px-6 py-1 font-bold text-gray-800 border-2 border-gray-800 hover:text-white hover:bg-gray-800"
           >
-            RSVP
-          </button>
+            Click here to RSVP
+          </Link>
         </p>
       </div>
       <div className="relative w-full md:w-1/2">
         <FernAndLuke className="md:absolute md:inset-0 md:h-full" />
-        <Modal
-          isOpen={isModalOpen}
-          onRequestClose={() => setIsModalOpen(false)}
-          contentLabel="RSVP form"
-          overlayClassName="bg-transparent-black blur fixed overflow-y-scroll flex items-start justify-center inset-0 z-50"
-          className="inset-0 flex justify-center outline-none"
-        >
-          {modalAnimations.map(
-            ({ item, key, props }) =>
-              item && (
-                <animated.div
-                  key={key}
-                  style={props}
-                  className="w-full max-w-xl mx-auto"
-                >
-                  <div className="mx-4 my-12 bg-white border-2 border-black shadow-2xl">
-                    <RSVP setIsModalOpen={setIsModalOpen} />
-                  </div>
-                </animated.div>
-              )
-          )}
-        </Modal>
       </div>
     </article>
   );
 };
 
 export default Hero;
-
-Modal.setAppElement('#___gatsby');
