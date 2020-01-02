@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import FernAndLuke from '../components/FernAndLuke';
+import FernAndLuke from '../components/fern-and-luke';
 
 const ThanksPage = () => (
   <Layout>

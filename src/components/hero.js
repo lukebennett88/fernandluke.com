@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import FernAndLuke from './FernAndLuke';
+import FernAndLuke from './fern-and-luke';
 
 const Hero = () => {
   return (
