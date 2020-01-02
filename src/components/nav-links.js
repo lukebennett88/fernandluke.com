@@ -2,12 +2,12 @@ const navLinks = [
   {
     id: 0,
     title: 'Home',
-    href: '/',
+    href: '#top',
   },
   {
     id: 1,
     title: 'RSVP',
-    href: '/rsvp',
+    href: '#rsvp',
   },
   {
     id: 2,
