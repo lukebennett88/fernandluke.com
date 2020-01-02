@@ -20,7 +20,7 @@ const Hero = () => {
           excited to share our special day with you and hope you’re ready to
           party hard!
         </p>
-        <p className="mt-6">
+        <p id="rsvp" className="mt-6">
           <Link
             to="/rsvp"
             className="inline-block px-6 py-1 font-bold text-gray-800 border-2 border-gray-800 hover:text-white hover:bg-gray-800"
