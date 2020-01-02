@@ -53,18 +53,20 @@ const RSVP = () => {
       {/* RSVP (Yes/No) */}
       <FormRow title="Hello! Will you be attending our wedding? *">
         <Radio
+          label="Heck yeah!"
           name="rsvp"
           id="rsvp-yes"
-          handleChange={handleChange}
-          value="Heck yeah!"
+          value="yes"
           required
+          handleChange={handleChange}
         />
         <Radio
+          label="Nah mate..."
           name="rsvp"
           id="rsvp-no"
-          handleChange={handleChange}
-          value="Nah mate..."
+          value="no"
           required
+          handleChange={handleChange}
         />
       </FormRow>
 
@@ -73,9 +75,9 @@ const RSVP = () => {
         <TextArea
           name="who"
           id="who"
-          required
           value="Write their names below"
           placeholder="Arnold Schwarzenegger"
+          required
           handleChange={handleChange}
         />
       </FormRow>
@@ -83,34 +85,38 @@ const RSVP = () => {
       {/* Is RSVPing a word? (Yes/No) */}
       <FormRow title="Is RSVPing even a real word?">
         <Radio
+          label="It’s a perfectly cromulent word!"
           name="is-rsvp-a-real-word"
           id="is-rsvp-a-real-word-yes"
+          value="yes"
           handleChange={handleChange}
-          value="It’s a perfectly cromulent word!"
         />
         <Radio
+          label="Pretty sure you made it up..."
           name="is-rsvp-a-real-word"
           id="is-rsvp-a-real-word-no"
+          value="no"
           handleChange={handleChange}
-          value="Pretty sure you made it up..."
         />
       </FormRow>
 
       {/* Will you be camping? */}
       <FormRow title="Will you be camping? *">
         <Radio
+          label="Fo shizzle"
           name="camping"
           id="camping-yes"
-          handleChange={handleChange}
-          value="Fo shizzle"
+          value="yes"
           required
+          handleChange={handleChange}
         />
         <Radio
+          label="Yeah nah..."
           name="camping"
           id="camping-no"
-          handleChange={handleChange}
-          value="Yeah nah..."
+          value="no"
           required
+          handleChange={handleChange}
         />
       </FormRow>
 
