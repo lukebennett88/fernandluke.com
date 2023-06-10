@@ -7,7 +7,7 @@
   "dependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^9.7.3",
-    "gatsby": "^2.18.17",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-canonical-urls": "^2.1.18",
     "gatsby-plugin-manifest": "^2.2.34",
